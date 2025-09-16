@@ -61,7 +61,7 @@
 
     .profile-img {
         width: 100%;
-        max-width: 220px;
+        max-width: 320px;
         border: 2px solid #000;
         border-radius: 0;
     }
@@ -69,13 +69,22 @@
     .project-box {
         border: 2px solid #000;
         padding: 1rem;
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem;
         background-color: #fff;
     }
 
     .project-box h3 {
         margin-top: 0;
         font-size: 1.3rem;
+        color: #111;
+    }
+
+    .highlight {
+        color: #b00020; /* red for emphasis */
+    }
+
+    .highlight2 {
+        color: #0055aa; /* blue for secondary emphasis */
     }
 
     .about-me {
@@ -83,10 +92,6 @@
         padding: 1rem;
         margin-bottom: 2rem;
         background-color: #fff;
-    }
-
-    ul {
-        padding-left: 1.2rem;
     }
 </style>
 </head>
@@ -104,20 +109,29 @@
 
         <div class="about-me">
             <h2>About Me</h2>
-            <p>I am interested in mathematics, both pure and applied. On the pure side, I am interested in algebra; on the applied side, I focus on dynamical systems and economics.</p>
+            <p>I am interested in mathematics, both pure and applied. On the pure side, I am interested in <span class="highlight">algebra</span>; on the applied side, I focus on <span class="highlight2">dynamical systems</span> and <span class="highlight2">economics</span>.</p>
         </div>
 
         <h2>Projects</h2>
 
         <div class="project-box">
             <h3>Bidmachine</h3>
-            <p>Bidmachine is a contract bid evaluation engine designed for organizations to automatically score, rank, and audit supplier proposals. It produces explainable results, flags anomalies, and generates downloadable audit reports for compliance purposes.</p>
-            <p><strong>Use Case:</strong> A city government issues an RFP for road maintenance and needs unbiased evaluation of all bids.</p>
+            <p><span class="highlight">Bidmachine</span> is an advanced contract bid evaluation engine that automatically scores, ranks, and audits supplier proposals. The system ensures full transparency and accountability, flags potential anomalies, and generates downloadable audit reports for compliance purposes. Its modular design allows organizations to adapt scoring criteria to their specific requirements, making it ideal for government and corporate procurement processes.</p>
+        </div>
+
+        <div class="project-box">
+            <h3>Nakashima Bundles on Calabi-Yau (N+2)-folds</h3>
+            <p>This project explores stable vector bundles over Calabi-Yau <span class="highlight2">(n+2)-folds</span>. Following Tohru Nakashima, we establish fundamental results regarding the structure of these "Nakashima Bundles'" moduli spaces by demonstrating that they form a projective scheme of finite-type over an algebraically-closed field.</p>
+        </div>
+
+        <div class="project-box">
+            <h3>Formal Verification of ECC via Typed Lambda Calculus</h3>
+            <p>This project presents a rigorous formalization of <span class="highlight">Elliptic Curve Cryptography (ECC)</span> and the <span class="highlight">ECDSA</span> using the Coq proof assistant. Using dependent type theory, it establishes machine-checked proofs of security properties including signature correctness, unforgeability, and side-channel resistance. The framework extends from finite field arithmetic through curve operations to cryptographic protocols, emphasizing practical vulnerabilities such as nonce reuse, timing attacks, and signature malleability. It lays the foundation for verifying quantum-resistant cryptographic schemes.</p>
         </div>
 
         <div class="project-box">
             <h3>Other Projects</h3>
-            <p>Placeholder for additional projects. Each project can include a description, technologies used, and impact.</p>
+            <p>Placeholder for additional projects. Each project can include a description, technologies used, and real-world impact.</p>
         </div>
 
     </div>
