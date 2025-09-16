@@ -3,173 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vasudevan Govardhanen</title>
-    <style>
-        /* General Styles */
-        body {
-            margin: 0;
-            font-family: "Times New Roman", serif;
-            background-color: #cce7ff; /* light pastel blue */
-            color: #111;
-            line-height: 1.6;
-        }
-        a {
-            color: #111;
-            text-decoration: none;
-        }
-        header {
-            text-align: center;
-            padding: 3rem 1rem 1rem 1rem;
-        }
-        header h1 {
-            font-size: 3rem;
-            margin-bottom: 0.3rem;
-            font-weight: bold;
-        }
-        header p {
-            font-size: 1.2rem;
-            font-style: italic;
-        }
-        nav {
-            text-align: center;
-            margin-bottom: 2rem;
-        }
-        nav a {
-            margin: 0 1rem;
-            font-size: 1rem;
-            font-weight: bold;
-            position: relative;
-        }
-        nav a::after {
-            content: '';
-            display: block;
-            width: 0;
-            height: 2px;
-            background: #111;
-            transition: width .3s;
-            position: absolute;
-            bottom: -3px;
-            left: 0;
-        }
-        nav a:hover::after {
-            width: 100%;
-        }
-
-        section {
-            max-width: 900px;
-            margin: auto;
-            padding: 2rem 1rem;
-        }
-        h2 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-            border-bottom: 1px solid #111;
-            display: inline-block;
-            padding-bottom: 0.2rem;
-        }
-        p {
-            margin-bottom: 1rem;
-        }
-
-        /* Projects */
-        .project {
-            background: #e6f2ff;
-            padding: 1.5rem;
-            margin-bottom: 1.5rem;
-            border-left: 4px solid #111;
-        }
-        .project h3 {
-            margin-top: 0;
-            margin-bottom: 0.5rem;
-        }
-
-        /* Resume */
-        .resume ul {
-            list-style-type: none;
-            padding-left: 0;
-        }
-        .resume li {
-            margin-bottom: 0.8rem;
-        }
-
-        /* Contact */
-        .contact a {
-            font-weight: bold;
-        }
-
-        /* Image */
-        .profile-img {
-            display: block;
-            max-width: 200px;
-            margin: 1rem auto;
-            border-radius: 50%;
-            border: 3px solid #111;
-        }
-
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 2rem 1rem;
-            font-size: 0.9rem;
-            color: #333;
-        }
-
-        /* Minimalist ornament (stab effect on h2) */
-        h2::before {
-            content: "† ";
-            font-size: 1.2rem;
-            color: #555;
-        }
-    </style>
+    <title>Vasu | Home</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <header>
-        <h1>Vasudevan Govardhanen</h1>
-        <p>Senior at Manalapan High School | Mathematics Enthusiast</p>
-        <img src="your-photo.jpg" alt="Vasudevan Govardhanen" class="profile-img">
-        <nav>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#resume">Resume</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+<header>
+    <h1>Vasu Govardhanen</h1>
+    <p>Senior at Manalapan High School | Mathematics Enthusiast</p>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="resume.html">Resume</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a high school senior passionate about mathematics. My interests span both pure mathematics—especially algebra—and applied fields, including dynamical systems and economics.</p>
-    </section>
+<section class="hero">
+    <h2>Welcome</h2>
+    <p>Exploring the beauty of mathematics, from algebra to dynamical systems and economics.</p>
+    <img src="images/profile.jpg" alt="Vasu Govardhanen">
+</section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Bidmachine</h3>
-            <p>Bidmachine is a contract bid evaluation engine that automatically scores and ranks supplier proposals using transparent, configurable criteria. It generates explainable results, flags anomalies, and produces a full audit trail to support fair and accountable procurement decisions.</p>
-            <p><strong>Use case example:</strong> A city government issues an RFP for road maintenance.</p>
-        </div>
-    </section>
+<section>
+    <h2>Featured Project</h2>
+    <div class="project">
+        <h3>Bidmachine</h3>
+        <p>Bidmachine is a contract bid evaluation engine that automatically scores and ranks supplier proposals using transparent, configurable criteria. It generates explainable results, flags anomalies, and produces a full audit trail to support fair and accountable procurement decisions.</p>
+        <p><strong>Use case example:</strong> A city government issues an RFP for road maintenance.</p>
+    </div>
+</section>
 
-    <section id="resume">
-        <h2>Resume</h2>
-        <div class="resume">
-            <ul>
-                <li><strong>High School:</strong> Manalapan High School, Senior</li>
-                <li><strong>Interests:</strong> Algebra, Dynamical Systems, Economics</li>
-                <li><strong>Projects:</strong> Bidmachine – Contract bid evaluation engine</li>
-                <li><strong>Skills:</strong> Mathematics, Problem Solving, Basic Programming</li>
-            </ul>
-        </div>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p class="contact">Email: <a href="mailto:vgovardhanen@gmail.com">vgovardhanen [at] gmail [dot] com</a></p>
-    </section>
-
-    <footer>
-        &copy; 2025 Vasudevan Govardhanen
-    </footer>
+<footer>
+    &copy; 2025 Vasu Govardhanen
+</footer>
 
 </body>
 </html>
